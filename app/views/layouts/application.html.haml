@@ -9,4 +9,6 @@
 %body
 	= render 'nav'
 	.container
+		= content_tag :div, notice, class: "bg_success"
+		= content_tag :div, alert, class: "bg_danger"
 		= yield
